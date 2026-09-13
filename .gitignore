@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# downloader output
+.downloaded.txt
+*.mp4
+*.mkv
+*.webm
+*.m4a
+*.mp3
+*.opus
+*.part
+*.ytdl
+*.srt
+*.vtt
+*.info.json
