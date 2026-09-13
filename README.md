@@ -44,6 +44,25 @@ winget install DenoLand.Deno
 
 Then close and reopen your terminal so the new PATH entries take effect.
 
+### Do I need YouTube Premium?
+
+No. yt-dlp downloads the same streams an anonymous viewer receives, and ads are
+never fetched because they arrive separately from the video stream.
+
+A Premium account changes exactly one thing worth knowing about. It makes itag
+616 available, the enhanced bitrate 1080p format that YouTube labels "1080p
+Premium". yt-dlp tags that format and raises its priority automatically, so
+passing `--cookies-from-browser` with a Premium session picks it up without any
+other change. Without a subscription you get ordinary 1080p and everything else
+behaves identically.
+
+One related quirk, in case you hit it: a Premium session skips the PO Token
+requirement for most formats but still needs one for subtitles.
+
+The `--cookies-from-browser` option itself has nothing to do with Premium. It
+covers your own unlisted and private uploads and age restricted material, which
+need a logged in account of any kind.
+
 ## Quick start
 
 Start by looking at what you are about to pull. This downloads nothing:
