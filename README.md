@@ -1,4 +1,4 @@
-# yt-playlist-dl
+# YT playlist downloader
 
 A yt-dlp wrapper for pulling down whole YouTube playlists and channels without
 having to remember twenty command line flags every time.
@@ -323,3 +323,7 @@ reporting, error handling and the archive all go through the Python API.
 
 Filenames are sanitised for Windows and capped at 200 characters, which keeps
 long titles from hitting the path limit.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
