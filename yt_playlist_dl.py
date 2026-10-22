@@ -7,7 +7,7 @@ Intended for content you have the right to download: your own uploads,
 Creative Commons / public-domain material, amateur videos, and anything the
 uploader explicitly allows. It does not touch DRM-protected streams.
 
-Requires:  pip install -U yt-dlp
+Requires:  pip install -U "yt-dlp[default]"
 Optional:  ffmpeg on PATH (needed for merging video+audio and for --audio-only)
 """
 
@@ -20,7 +20,7 @@ from pathlib import Path
 try:
     import yt_dlp
 except ImportError:
-    sys.exit("yt-dlp is not installed. Run:  pip install -U yt-dlp")
+    sys.exit('yt-dlp is not installed. Run:  pip install -U "yt-dlp[default]"')
 
 
 # progress / logging
