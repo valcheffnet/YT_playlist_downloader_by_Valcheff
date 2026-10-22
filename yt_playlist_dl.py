@@ -23,9 +23,7 @@ except ImportError:
     sys.exit("yt-dlp is not installed. Run:  pip install -U yt-dlp")
 
 
-# --------------------------------------------------------------------------- #
 # progress / logging
-# --------------------------------------------------------------------------- #
 
 class QuietLogger:
     """Swallow yt-dlp's own chatter, keep warnings and errors."""
@@ -63,9 +61,7 @@ def postprocessor_hook(d):
         print("  post-processing: {}".format(d.get("postprocessor")))
 
 
-# --------------------------------------------------------------------------- #
 # options
-# --------------------------------------------------------------------------- #
 
 def build_opts(args) -> dict:
     outdir = Path(args.output).expanduser().resolve()
@@ -215,9 +211,7 @@ def parse_rate(text: str) -> int:
     return int(float(text) * mult)
 
 
-# --------------------------------------------------------------------------- #
 # actions
-# --------------------------------------------------------------------------- #
 
 def list_playlist(url: str) -> None:
     """Print the playlist contents without downloading anything."""
@@ -255,9 +249,7 @@ def download(urls: list[str], opts: dict) -> int:
     return 1 if failures else 0
 
 
-# --------------------------------------------------------------------------- #
 # cli
-# --------------------------------------------------------------------------- #
 
 EPILOG = """examples:
   python yt_playlist_dl.py "https://www.youtube.com/playlist?list=PL..." -o D:/Video

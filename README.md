@@ -49,7 +49,7 @@ Then close and reopen your terminal so the new PATH entries take effect.
 No. yt-dlp downloads the same streams an anonymous viewer receives, and ads are
 never fetched because they arrive separately from the video stream.
 
-A Premium account changes exactly one thing worth knowing about. It makes itag
+A Premium account chnages exactly one thing worth knowing about. It makes itag
 616 available, the enhanced bitrate 1080p format that YouTube labels "1080p
 Premium". yt-dlp tags that format and raises its priority automatically, so
 passing `--cookies-from-browser` with a Premium session picks it up without any
@@ -285,7 +285,7 @@ ERROR: [youtube] <id>: This video is not available
 
 The video is fine. YouTube obfuscates its stream URLs behind a JavaScript
 challenge, and yt-dlp solves it by running an external JS runtime over solver
-scripts kept in a separate package. Two pieces are needed and one of them is
+scripts kept in a seperate package. Two pieces are needed and one of them is
 usually missing:
 
 | Piece | How you get it |
